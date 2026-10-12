@@ -41,6 +41,8 @@ buttons.addEventListener('click', (e) => {
     }
     else if(action === 'sqrt'){
         handleSqrt();
+        history = '';
+        calculated = true;
     }
     else if(action ==='equals'){
         if (op && curr !== ''){
