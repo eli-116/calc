@@ -47,7 +47,7 @@ body{
     .calc{
         max-width: none;
         width: 100vw;
-        height: 100dvw;
+        height: 100dvh;
         border:none;
     }
 }
