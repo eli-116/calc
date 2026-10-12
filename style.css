@@ -38,3 +38,16 @@ body{
 #input_function{
     font-size: 1rem;
 }
+
+
+@media(max-width: 600px){
+    body{
+        margin: 0;
+    }
+    .calc{
+        max-width: none;
+        width: 100vw;
+        height: 100dvw;
+        border:none;
+    }
+}
