@@ -44,6 +44,9 @@ buttons.addEventListener('click', (e) => {
         history = '';
         calculated = true;
     }
+    else if(action === 'sign_swap'){
+        handleSignSwap();
+    }
     else if(action ==='equals'){
         if (op && curr !== ''){
             eq = `${history} ${curr}`;
@@ -97,6 +100,14 @@ function handleSqrt(){
     }
     //convert ans back to string
     curr = String(Math.sqrt(num));
+}
+function handleSignSwap(){
+    if (curr === '' || curr === 'Error'){
+        return;
+    }
+    curr =String(parseFloat(curr)*-1)
+    
+
 }
 //handling number and or .
 function handleNum(value){
